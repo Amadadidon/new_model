@@ -1,0 +1,167 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Navbar ===== */
+nav {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+}
+
+/* DonSocial title at top center */
+nav .brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Logout at top left */
+nav .logout {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+/* Center links below title */
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 40px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Containers ===== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* ===== Post Styles ===== */
+.post {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.post button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+
+.comments {
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 2px solid #ddd;
+}
+
+.comments p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* ===== Login/Register ===== */
+.login-container, .register-container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 50px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.login-container h2, .register-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-container input, .register-container input {
+    margin-bottom: 20px;
+    padding: 14px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button, .register-container button {
+    padding: 14px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover, .register-container button:hover {
+    background-color: #0056b3;
+}
+
+/* ===== Form Links ===== */
+.login-container a, .register-container a {
+    text-decoration: none;
+    color: #007bff;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1rem;
+}
+
+.login-container a:hover, .register-container a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Header & Posts on Home ===== */
+h1, h2 {
+    text-align: center;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media screen and (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav .brand {
+        font-size: 2rem;
+    }
+
+    nav .nav-links a {
+        font-size: 1.3rem;
+    }
+}
